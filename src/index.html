@@ -4,11 +4,11 @@
     'title': 'Главная'
   })
   <body>
-    <div class="wrapper">
+    <div class="wrapper position-relative">
       @@include('html/header.html', {})
       <main class="page">
         <div data-observ></div>
-        
+        @@include('html/main.html', {})
       </main>
       @@include('html/footer.html', {})
     </div>

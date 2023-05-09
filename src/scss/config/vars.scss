@@ -4,7 +4,7 @@ $maxWidthContainer: 1200; // ширина контейнера с учетом p
 $containerWidth: 1160; // ширина контейнера из макета
 
 $mainOffset: 15; // отступы безопасности для контейнера
-$mainFont: ''; // !указать здесь основное семейство шрифта
+$mainFont: 'Inter'; // !указать здесь основное семейство шрифта
 $mainWeight: 400; // !указать здесь основное начертание шрифта
 
 $headerHeight: 100;
@@ -12,16 +12,17 @@ $footerHeight: 100;
 
 $mainRadius: rem(10);
 
-$whiteColor: #fff;
-$blackColor: #131313;
-$grayColor: #6f6f6f;
-$redColor: #ff4040;
+$white: #fff;
+$blue: #051B34;
+$lightBlue: #2C4B6D;
+$red: #E76E74;
+$pink: #E79CA0;
 
-$firstAccentColor: $blackColor;
-$secondAccentColor: $redColor;
+$firstAccentColor: $blue;
+$secondAccentColor: $lightBlue;
 
 $fontFamily: $mainFont, sans-serif; // Семейство шрифта по умолчанию
-$fontColor: $blackColor; // Цвет шрифта по умолчанию
+$fontColor: $white; // Цвет шрифта по умолчанию
 $fontSize: rem(16); // Размер шрифта по умолчанию
 $fontWeight: $mainWeight; // Жирность шрифта по умолчанию
 

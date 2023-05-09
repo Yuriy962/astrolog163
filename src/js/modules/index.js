@@ -118,6 +118,7 @@ const menuInit = () => {
     })
   }
 }
+
 const menuOpen = () => {
   toggleBodyLock(true)
   html.classList.add('menu-open')
@@ -127,17 +128,32 @@ const menuClose = () => {
   html.classList.remove('menu-open')
 }
 
-export {
-  FLS,
-  isWebp,
-  isMobile,
-  addTouchClass,
-  headerFixed,
-  togglePopupWindows,
-  addLoadedClass,
-  getHash,
-  setHash,
-  menuInit,
-  menuOpen,
-  menuClose,
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector(".header__menu");
+const mobileMenuItems = document.querySelectorAll(".menu__item");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle('hamburger--active');
+  mobileMenu.classList.toggle("header__menu--active");
+});
+
+
+if (window.matchMedia("(max-width: 992px)")){
+  mobileMenuItems.forEach(item => {
+    mobileMenu.classList.remove(".header__menu--active");
+  });
 }
+  export {
+    FLS,
+    isWebp,
+    isMobile,
+    addTouchClass,
+    headerFixed,
+    togglePopupWindows,
+    addLoadedClass,
+    getHash,
+    setHash,
+    menuInit,
+    menuOpen,
+    menuClose,
+  };

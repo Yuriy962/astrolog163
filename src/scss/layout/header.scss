@@ -1,62 +1,131 @@
 // =====================================================================================================================
 .header {
   width: 100%;
+  padding: 20px 0;
+  z-index: 10;
   &.sticky {
     // ..стили для липкого хедера
   }
+
   // .header__container
   &__container {
     height: rem($headerHeight);
     display: flex;
     align-items: center;
   }
+
+  &__socials{
+    display: flex;
+    &--mobile{
+      display: none;
+    }
+  }
 }
 // =====================================================================================================================
 
-// Burger
-/*
-.icon-menu {
-  display: none;
-  @include media(767) {
+.menu {
+  &__link {
     display: block;
-    position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 5;
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
+    padding: 25px 0px;
+    padding-right: 1.25rem;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $pink;
     }
-    &::before {
-      top: 0;
-    }
-    &::after {
-      bottom: 0;
-    }
-    span {
-      top: calc(50% - rem(1));
-    }
-    .menu-open & {
-      span {
-        width: 0;
+  }
+}
+
+.address{
+  color: #86949E;
+  font-size: 1rem;
+}
+
+.hamburger{
+  display: none;
+  height: 30px;
+  width: 35px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  span{
+    display: block;
+    background-color: #fff;
+    height: 5px;
+    margin-bottom: 6px;
+    transition: all 0.3s;
+  }
+  &--active{
+    span{
+      &:nth-child(1){
+        transform: rotate(45deg) translate(9px, 9px);
       }
-      &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
+      &:nth-child(2){
+        display: none;
       }
-      &::after {
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateY(3px);
       }
     }
   }
 }
-*/
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+@media (max-width: 1200px){
+  .hamburger{
+    position: absolute;
+    display: block;
+    right: 30px;
+  }
+  .header{
+    &__menu{
+        position: absolute;
+        z-index: 2;
+        padding-top: 8rem;
+        background: rgb(5, 27, 52, 0.9);
+        left: -200%;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        transition: all 0.3s;
+        &--active{
+          left: 0;
+        }
+    }
+    &__link{
+      padding-left: 25px;
+    }
+  }
+}
+
+@media (max-width: 676px){
+  .header{
+    &__socials{
+      display: none;
+      &--mobile{
+        position: absolute;
+        top: 60px;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .logo{
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  .hamburger {
+    position: relative;
+    right: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.promo{
+    &-video{
+        max-width: 621px;
+        width: 100%;
+        height: 608px;
+    }
+    &__text{
+        max-width: 360px;
+    }
+
+    @media (max-width: 1200px){
+        &-video{
+            height: auto;
+            max-height: 480px;
+        }
+    }
+
+    @media (max-width: 992px){
+        &__title,
+        &__content,
+        &__text{
+            text-align: center;
+        }
+        &__text{
+            margin: 0 auto;
+        }
+    }
+}
