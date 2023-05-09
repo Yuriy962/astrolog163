@@ -1,5 +1,14 @@
+.photoblock{
+  &__img{
+    width: 100%;
+    min-height: 213px;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
 .footer {
-  padding: rem(20) 0;
+  padding: 2.5rem 0;
   background: $firstAccentColor;
   // .footer__container
   &__container {
@@ -8,6 +17,25 @@
     @include media(510) {
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+
+  &__text{
+    font-size: 1.375rem;
+    line-height: 140%;
+  }
+  &__socials{
+    @extend .header__socials;
+    display: flex;
+  }
+
+  @media (max-width: 576px){
+    padding: 1.5rem 0;
+    &__item{
+      text-align: center;
+    }
+    &__socials{
+      justify-content: center;
     }
   }
 }

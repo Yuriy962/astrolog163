@@ -12,8 +12,8 @@
   <body>
     <div class="position-relative wrapper">
       <header class="header position-fixed">
-  <div class="align-items-center container d-flex">
-    <a href="#" class="align-self-end header__logo logo">
+  <div class="container align-items-center d-flex">
+    <a href="#" class="align-self-end logo header__logo">
       <picture>
         <source media="(min-width:1100px)" srcset="./images/logo-with-words.svg">
         <source media="(max-width:767px)" srcset="./images/logo.svg">
@@ -22,7 +22,7 @@
       </picture>
     </a>
     <nav class="align-self-end header__menu justify-content-center justify-content-xl-between menu ms-auto">
-      <ul class="flex-column d-flex flex-xl-row menu__list pe-3">
+      <ul class="flex-xl-row d-flex flex-column menu__list pe-3">
         <li class="menu__item">
           <a href="#about" class="menu__link">О нас</a>
         </li>
@@ -54,8 +54,8 @@
         </li>
       </ul>
     </nav>
-    <div class="header__contacts ms-xl-auto mx-auto">
-      <a href="tel:+79608080049" class="d-block mb-2 phone">
+    <div class="mx-auto header__contacts ms-xl-auto">
+      <a href="tel:+79608080049" class="mb-2 d-block phone">
         +7 960 808 00 49
       </a>
       <span class="address">
@@ -89,11 +89,11 @@
 </header>
       <main class="page">
         <div data-observ></div>
-        <section class="promo section section--first">
+        <section class="section promo section--first">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 promo__content py-5">
-                <h1 class="mb-4 promo__title">
+                <h1 class="promo__title mb-4">
                     Самарская школа <br> астрологии
                 </h1>
                 <p class="mb-5 mt-2 promo__text text">
@@ -110,10 +110,78 @@
         </div>
     </div>
 </section>
+<section class="section textblock">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 field-text text-center textblock__content">
+                Группа «Базовый Курс Астрологии» начинает занятия 14 апреля 2023 года. Желающих присоединиться и научиться — приглашаем заполнить 
+                <a class="link-text" href="#" target="_blank">
+                     форму по ссылке.
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
       </main>
-      <footer class="footer">
-  <div class="footer__container">
-    footer
+      
+<section class="photoblock">
+  <img class="photoblock__img" src="../images/volga.jpg" alt="Река Волга">
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 footer__item mb-4 mb-lg-5 col-6 mx-auto mx-sm-0 order-0">
+        <a href="#" class="align-self-end logo footer__logo">
+          <img src="./images/logo-with-words.svg" alt="Самарская школа астрологии">
+        </a>
+      </div>
+      <div class="col-lg-4 footer__item col-sm-6 mb-4 mb-lg-5 order-1">
+        <span class="d-inline-block footer__title mb-2">
+          Наше местоположение
+        </span>
+        <div class="footer__text">
+          г. Самара, ул. Мичурина 23, <br> оф. 449
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-sm-6 footer__item mb-3 d-flex flex-column mb-lg-5 mb-sm-4 order-2">
+        <span class="d-inline-block footer__title mb-2">
+          Контакты
+        </span>
+        <a href="tel:+79608080049" class="d-inline-block footer__text mb-1">
+          +7 960 808 00 49
+        </a>
+        <a href="mailto:astrologer@63school.ru" class="d-inline-block footer__text mb-1">
+          astrologer@63school.ru
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 col-sm-6 footer__item mb-sm-0 mb-3 order-5 order-lg-3">
+        <span class="caption">©2020-2023  Самарская Школа Астрологии</span>
+      </div>
+      <div class="col-12 col-lg-4 col-sm-6 footer__item mb-sm-0 mb-4 order-4">
+        <a class="caption" href="#policy" target="_blank">
+          Политика конфиденциальности
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 col-sm-6 footer__item mb-sm-0 mb-4 order-3 order-lg-5">
+        <div class="align-items-center footer__socials">
+          <a href="tel:+79608080049" target="_blank" class="icon ms-0">
+            <svg class="icon">
+              <use xlink:href="#phone"></use>
+            </svg>
+          </a>
+          <a href="https://t.me/Astrolog_Samara" target="_blank" class="icon">
+            <svg class="icon">
+              <use xlink:href="#telegram"></use>
+            </svg>
+          </a>
+          <a href="https://vk.com/astrolog63school" target="_blank" class="icon">
+            <svg class="icon">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -122,26 +190,26 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="phone">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30ZM7.89474 6H10.6459C11.4637 6 12.1992 6.4979 12.5029 7.25722L13.5572 9.89288C13.83 10.5749 13.7069 11.3517 13.2366 11.916L12.6693 12.5969C12.007 13.3916 12.06 14.56 12.7915 15.2915L14.7085 17.2085C15.44 17.94 16.6084 17.993 17.4031 17.3307L18.084 16.7634C18.6483 16.2931 19.4251 16.17 20.1071 16.4428L22.7428 17.4971C23.5021 17.8008 24 18.5363 24 19.3541V22.1053C24 23.1517 23.1517 24 22.1053 24C13.2106 24 6 16.7894 6 7.89474C6 6.8483 6.8483 6 7.89474 6Z"></path>
     </symbol>
-    </svg>
+  </svg>
 
-    <svg width="0" height="0" class="hidden">
-      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="telegram">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM15.5375 11.0737C14.0786 11.6805 11.1627 12.9365 6.78987 14.8417C6.07979 15.124 5.70782 15.4003 5.67396 15.6704C5.61673 16.1269 6.18839 16.3066 6.96684 16.5514C7.07273 16.5847 7.18244 16.6192 7.29492 16.6558C8.0608 16.9047 9.09103 17.196 9.62661 17.2075C10.1124 17.218 10.6547 17.0177 11.2533 16.6067C15.3389 13.8488 17.448 12.4548 17.5804 12.4247C17.6738 12.4035 17.8032 12.3769 17.891 12.4548C17.9787 12.5328 17.97 12.6804 17.9608 12.72C17.9041 12.9614 15.6602 15.0476 14.4989 16.1272C14.1369 16.4638 13.8801 16.7025 13.8276 16.757C13.71 16.8792 13.5902 16.9947 13.475 17.1058C12.7635 17.7917 12.2299 18.306 13.5045 19.146C14.1171 19.5496 14.6072 19.8834 15.0962 20.2164C15.6302 20.5801 16.1629 20.9428 16.852 21.3946C17.0276 21.5097 17.1953 21.6292 17.3586 21.7457C17.9801 22.1887 18.5384 22.5868 19.2282 22.5233C19.6291 22.4864 20.0431 22.1095 20.2533 20.9854C20.7503 18.3289 21.727 12.5731 21.9528 10.2012C21.9726 9.99341 21.9477 9.72746 21.9277 9.61072C21.9077 9.49397 21.866 9.32763 21.7142 9.2045C21.5345 9.05867 21.257 9.02792 21.133 9.0301C20.5688 9.04004 19.7032 9.34102 15.5375 11.0737Z"></path>
-      </symbol>
-    </svg>
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="telegram">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM15.5375 11.0737C14.0786 11.6805 11.1627 12.9365 6.78987 14.8417C6.07979 15.124 5.70782 15.4003 5.67396 15.6704C5.61673 16.1269 6.18839 16.3066 6.96684 16.5514C7.07273 16.5847 7.18244 16.6192 7.29492 16.6558C8.0608 16.9047 9.09103 17.196 9.62661 17.2075C10.1124 17.218 10.6547 17.0177 11.2533 16.6067C15.3389 13.8488 17.448 12.4548 17.5804 12.4247C17.6738 12.4035 17.8032 12.3769 17.891 12.4548C17.9787 12.5328 17.97 12.6804 17.9608 12.72C17.9041 12.9614 15.6602 15.0476 14.4989 16.1272C14.1369 16.4638 13.8801 16.7025 13.8276 16.757C13.71 16.8792 13.5902 16.9947 13.475 17.1058C12.7635 17.7917 12.2299 18.306 13.5045 19.146C14.1171 19.5496 14.6072 19.8834 15.0962 20.2164C15.6302 20.5801 16.1629 20.9428 16.852 21.3946C17.0276 21.5097 17.1953 21.6292 17.3586 21.7457C17.9801 22.1887 18.5384 22.5868 19.2282 22.5233C19.6291 22.4864 20.0431 22.1095 20.2533 20.9854C20.7503 18.3289 21.727 12.5731 21.9528 10.2012C21.9726 9.99341 21.9477 9.72746 21.9277 9.61072C21.9077 9.49397 21.866 9.32763 21.7142 9.2045C21.5345 9.05867 21.257 9.02792 21.133 9.0301C20.5688 9.04004 19.7032 9.34102 15.5375 11.0737Z"></path>
+    </symbol>
+  </svg>
 
-    <svg width="0" height="0" class="hidden">
-      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="vk">
-        <g clip-path="url(#clip0_181_570)">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.10883 2.10883C0 4.21766 0 7.61175 0 14.4V15.6C0 22.3882 0 25.7823 2.10883 27.8912C4.21766 30 7.61175 30 14.4 30H15.6C22.3882 30 25.7823 30 27.8912 27.8912C30 25.7823 30 22.3882 30 15.6V14.4C30 7.61175 30 4.21766 27.8912 2.10883C25.7823 0 22.3882 0 15.6 0H14.4C7.61175 0 4.21766 0 2.10883 2.10883ZM5.06257 9.12506C5.22507 16.9251 9.12506 21.6126 15.9626 21.6126H16.3501V17.1501C18.8626 17.4001 20.7625 19.2376 21.525 21.6126H25.0751C24.1001 18.0626 21.5374 16.1001 19.9374 15.3501C21.5374 14.4251 23.7874 12.1751 24.3249 9.12506H21.0999C20.3999 11.6001 18.3251 13.8501 16.3501 14.0626V9.12506H13.125V17.7751C11.125 17.2751 8.60006 14.8501 8.48756 9.12506H5.06257Z"></path>
-        </g>
-        <defs>
-          <clipPath id="clip0_181_570">
-            <rect width="30" height="30"></rect>
-          </clipPath>
-        </defs>
-      </symbol>
-    </svg>
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="vk">
+      <g clip-path="url(#clip0_181_570)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.10883 2.10883C0 4.21766 0 7.61175 0 14.4V15.6C0 22.3882 0 25.7823 2.10883 27.8912C4.21766 30 7.61175 30 14.4 30H15.6C22.3882 30 25.7823 30 27.8912 27.8912C30 25.7823 30 22.3882 30 15.6V14.4C30 7.61175 30 4.21766 27.8912 2.10883C25.7823 0 22.3882 0 15.6 0H14.4C7.61175 0 4.21766 0 2.10883 2.10883ZM5.06257 9.12506C5.22507 16.9251 9.12506 21.6126 15.9626 21.6126H16.3501V17.1501C18.8626 17.4001 20.7625 19.2376 21.525 21.6126H25.0751C24.1001 18.0626 21.5374 16.1001 19.9374 15.3501C21.5374 14.4251 23.7874 12.1751 24.3249 9.12506H21.0999C20.3999 11.6001 18.3251 13.8501 16.3501 14.0626V9.12506H13.125V17.7751C11.125 17.2751 8.60006 14.8501 8.48756 9.12506H5.06257Z"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_181_570">
+          <rect width="30" height="30"></rect>
+        </clipPath>
+      </defs>
+    </symbol>
+  </svg>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

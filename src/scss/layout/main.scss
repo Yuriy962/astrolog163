@@ -92,8 +92,12 @@ a{
     height: 30px;
 }
 
+.footer__title{
+    @extend .address;
+}
+
 .section{
-    padding-bottom: 40px;
+    padding: 40px 0;
     &--first{
         padding-top: 140px;
     }
@@ -126,4 +130,5 @@ a{
     }
 }
 
-@import 'layout/promo';
+@import 'layout/parts/promo';
+@import 'layout/parts/textblock';
