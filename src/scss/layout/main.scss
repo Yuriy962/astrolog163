@@ -65,9 +65,10 @@ a{
 
 .icon{
     margin: 0 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    fill: #fff;
+    &:hover{
+        fill: $pink;
+    }
 }
 
 .btn{
@@ -86,6 +87,11 @@ a{
     }
 }
 
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
 .section{
     padding-bottom: 40px;
     &--first{
@@ -97,7 +103,9 @@ a{
     html{
         font-size: 14px;
     }
-    h1{
+}
+@media (max-width: 992px){
+    h1 {
         font-size: 3.5rem;
     }
 }
@@ -108,8 +116,13 @@ a{
 }
 
 @media (max-width: 540px){
-    .btn{
-
+    h1 {
+        font-size: 3rem;
+    }
+    .section {
+        &--first {
+            padding-top: 100px;
+        }
     }
 }
 

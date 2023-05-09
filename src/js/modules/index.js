@@ -131,6 +131,7 @@ const menuClose = () => {
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector(".header__menu");
 const mobileMenuItems = document.querySelectorAll(".menu__item");
+let headerSmrSCHOOL = document.querySelector("header");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('hamburger--active');
@@ -138,11 +139,13 @@ hamburger.addEventListener("click", () => {
 });
 
 
-if (window.matchMedia("(max-width: 992px)")){
+if (window.matchMedia("(max-width: 1200px)")){
   mobileMenuItems.forEach(item => {
     mobileMenu.classList.remove(".header__menu--active");
   });
 }
+
+
   export {
     FLS,
     isWebp,

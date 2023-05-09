@@ -2,7 +2,8 @@
     &-video{
         max-width: 621px;
         width: 100%;
-        height: 608px;
+        height: auto;
+        max-height: 608px;
     }
     &__text{
         max-width: 360px;
@@ -23,6 +24,10 @@
         }
         &__text{
             margin: 0 auto;
+        }
+        &-video {
+            max-width: 100%;
+            max-height: 350px;
         }
     }
 }
