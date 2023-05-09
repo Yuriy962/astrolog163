@@ -3,6 +3,7 @@
   width: 100%;
   padding: 20px 0;
   z-index: 10;
+  background-color: $firstAccentColor;
   &.sticky {
     // ..стили для липкого хедера
   }
@@ -53,8 +54,8 @@
   span{
     display: block;
     background-color: #fff;
-    height: 5px;
-    margin-bottom: 6px;
+    height: 3px;
+    margin-bottom: 8px;
     transition: all 0.3s;
   }
   &--active{
@@ -112,7 +113,7 @@
       display: none;
       &--mobile{
         position: absolute;
-        top: 60px;
+        top: 35px;
         display: flex;
       }
     }
@@ -120,6 +121,10 @@
 }
 
 @media (max-width: 540px) {
+  .header{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .logo{
     margin-right: 15px;
     flex-shrink: 0;
@@ -127,5 +132,11 @@
   .hamburger {
     position: relative;
     right: 0;
+  }
+  .menu{
+    &__link{
+      padding: 15px 0;
+      font-size: 15px;
+    }
   }
 }

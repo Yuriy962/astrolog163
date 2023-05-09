@@ -266,6 +266,7 @@ body.lock {
   width: 100%;
   padding: 20px 0;
   z-index: 10;
+  background-color: #051B34;
 }
 .header__container {
   height: 6.25rem;
@@ -307,8 +308,8 @@ body.lock {
 .hamburger span {
   display: block;
   background-color: #fff;
-  height: 5px;
-  margin-bottom: 6px;
+  height: 3px;
+  margin-bottom: 8px;
   transition: all 0.3s;
 }
 .hamburger--active span:nth-child(1) {
@@ -357,11 +358,15 @@ body.lock {
   }
   .header__socials--mobile {
     position: absolute;
-    top: 60px;
+    top: 35px;
     display: flex;
   }
 }
 @media (max-width: 540px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .logo {
     margin-right: 15px;
     flex-shrink: 0;
@@ -369,6 +374,10 @@ body.lock {
   .hamburger {
     position: relative;
     right: 0;
+  }
+  .menu__link {
+    padding: 15px 0;
+    font-size: 15px;
   }
 }
 * {
