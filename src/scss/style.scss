@@ -20,6 +20,7 @@
 */
 // @import 'libs/aos';
 // @import 'libs/swiper';
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 // Подлючение кастомного скрола для всего сайта =======================================================================================================================
 @import 'config/scrollbar';
@@ -35,3 +36,4 @@
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+@import 'layout/modals';

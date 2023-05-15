@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
 @font-face {
   font-family: Inter;
   font-display: swap;
@@ -483,9 +484,53 @@ a:hover {
   transition: all 0.3s;
   text-transform: uppercase;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   color: #E79CA0;
   box-shadow: 0px 2px 10px 15px rgba(231, 110, 116, 0.2);
+}
+
+.checkbox {
+  margin-left: 1rem;
+  visibility: hidden;
+}
+.checkbox + label {
+  cursor: pointer;
+  position: relative;
+  line-height: 130%;
+}
+.checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.checkbox:checked + label::before {
+  content: "✓";
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .checkbox + label {
+    display: flex;
+    align-items: end;
+  }
+  .checkbox + label::before {
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(25%);
+    flex-shrink: 0;
+  }
+  .checkbox:checked + label::before {
+    display: inline-block;
+  }
 }
 
 .icon {
@@ -523,6 +568,14 @@ a:hover {
     padding-top: 100px;
   }
 }
+.policy {
+  font-size: 1em;
+  text-decoration: underline;
+}
+.policy:hover {
+  text-decoration: none;
+}
+
 .promo-video {
   max-width: 621px;
   width: 100%;
@@ -619,4 +672,48 @@ a:hover {
   .footer__socials {
     justify-content: center;
   }
+}
+
+.form {
+  max-width: 534px;
+  width: 100%;
+  padding: 3rem 4rem;
+  background-color: #2C4B6D;
+  border-radius: 20px;
+}
+.form__title {
+  text-transform: none;
+}
+.form__input {
+  padding: 10px 0;
+  color: #86949E;
+  background-color: transparent;
+  border-bottom: 2px;
+  border-color: #fff;
+  border-style: solid;
+}
+.form__input.valid {
+  color: #fff;
+}
+.form__input.invalid {
+  color: #E76E74;
+  border-style: #E76E74;
+}
+.form .btn {
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .form {
+    padding: 2rem 3rem;
+  }
+}
+.fancybox__content > .f-button.is-close-btn {
+  top: 10px;
+  right: 18px;
+  width: 17px;
+}
+
+.f-button {
+  background: transparent;
 }

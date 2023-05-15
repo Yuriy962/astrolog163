@@ -33,7 +33,7 @@
         <span class="caption">©2020-2023  Самарская Школа Астрологии</span>
       </div>
       <div class="footer__item col-lg-4 col-sm-6 col-12 order-4 mb-4 mb-sm-0">
-        <a class="caption" href="#policy" target="_blank">
+        <a class="caption policy" href="#policy">
           Политика конфиденциальности
         </a>
       </div>
@@ -59,6 +59,32 @@
     </div>
   </div>
 </footer>
+
+<form id="form" class="form mt-3" style="display: none;" novalidate>
+  <h3 class="form__title text-center pb-4">
+    Записаться на обучение
+  </h3>
+  <div class="d-flex flex-column">
+    <!-- Поле "Имя" -->
+      <input class="form__input field-text mb-3" name="name" type="text" id="name" placeholder="Имя" required>
+    <!-- Поле "email" -->
+      <input class="form__input field-text mb-3" name="email" type="email" id="email" placeholder="Email" required>
+    <!-- Поле "Телефон" -->
+      <input class="form__input field-text mb-3" name="tel" type="tel" id="tel" placeholder="Телефон" required>
+    <!-- Поле "Комментарий" -->
+      <input class="form__input field-text mb-lg-3 mb-0" name="comment" placeholder="Комментарий">
+  </div>
+
+  <div class="form__footer">
+    <div class="form__checkbox mt-4 mb-5 my-xl-5">
+      <input type="checkbox" class="checkbox" id="agreement">
+      <label for="agreement">
+        <span>Согласен с <a href="#policy" class="policy">политикой конфиденциальности</a></span>
+      </label>
+    </div>
+    <input class="btn" type="submit">
+  </div>
+</form>
 
 <!-- SVG Sprite -->
   <svg width="0" height="0" class="hidden">

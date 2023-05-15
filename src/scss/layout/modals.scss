@@ -1,0 +1,44 @@
+.form {
+    max-width: 534px;
+    width: 100%;
+    padding: 3rem 4rem;
+    background-color: $secondAccentColor;
+    border-radius: 20px;
+    &__title{
+        text-transform: none;
+    }
+    &__input{
+        padding: 10px 0;
+        color: #86949E;
+        background-color: transparent;
+        border-bottom: 2px;
+        border-color: #fff;
+        border-style: solid;
+        &.valid{
+            color: #fff;
+        }
+        &.invalid{
+            color: $red;
+            border-style: $red;
+        }
+    }
+    .btn{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .form{
+        padding: 2rem 3rem;
+    }
+}
+
+.fancybox__content>.f-button.is-close-btn {
+    top: 10px;
+    right: 18px;
+    width: 17px;
+}
+
+.f-button {
+    background: transparent;
+}

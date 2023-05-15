@@ -75,6 +75,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.17",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",

@@ -1,5 +1,10 @@
-import toggleBodyLock from './../helpers/toggleBodyLock'
-import { html, firstScreen, header, burgerButton } from './../helpers/elementsNodeList'
+import toggleBodyLock from './../helpers/toggleBodyLock';
+import { html, firstScreen, header, burgerButton } from './../helpers/elementsNodeList';
+import { Fancybox } from "@fancyapps/ui";
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
 
 // logger (Full Logging System) ==========================================================================
 function FLS(message) {
