@@ -150,6 +150,45 @@ if (window.matchMedia("(max-width: 1200px)")){
   });
 }
 
+const EMAIL_REGEXP = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+    ///^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
+  const PHONE_REGEXP = /\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}/;
+
+  // Валидация формы
+  // let validateInput = (id, inputName, regexp) => {
+  //   let input = document.forms[id][inputName];
+  //   if(input){
+  //     if (input.value === "" || !validateValue(input.type, input.value, regexp)) {
+  //       $(`#${id} .${inputName}`).addClass("valid");
+  //       $(`#${id} .${inputName}`).removeClass("invalid");
+  //     } else {
+  //       $(`#${id} .${inputName}`).addClass("invalid");
+  //       $(`#${id} .${inputName}`).removeClass("valid");
+  //     }
+  //   } else {
+  //     console.log(`Поля '${inputName}' нет в этой форме!`);
+  //     return false;
+  //   }
+  // }
+
+  
+  // сравнение введенного значения в инпуте с регулярным выражением
+  // let validateValue = (inputType, value, regexp = "") => {
+  //   if (inputType === "text") {
+  //     return true;
+  //   }
+  //   return regexp.test(value);
+  // }
+
+  // симуляция отправки формы
+  // $("form").on("submit", function (e) {
+  //   e.preventDefault();
+  //   validateInput("name", "name");
+  //   validateInput("email", "email", EMAIL_REGEXP);
+  //   validateInput("tel", "tel", PHONE_REGEXP);
+  //   validateInput("comment", "comment");
+  //   // $("form").trigger("reset");
+  // });
 
   export {
     FLS,

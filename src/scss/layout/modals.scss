@@ -14,10 +14,12 @@
         border-bottom: 2px;
         border-color: #fff;
         border-style: solid;
-        &.valid{
+        &.valid,
+        &:valid{
             color: #fff;
         }
-        &.invalid{
+        &.invalid
+        &:invalid{
             color: $red;
             border-style: $red;
         }

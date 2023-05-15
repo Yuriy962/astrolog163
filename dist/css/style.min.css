@@ -692,10 +692,10 @@ a:hover {
   border-color: #fff;
   border-style: solid;
 }
-.form__input.valid {
+.form__input.valid, .form__input:valid {
   color: #fff;
 }
-.form__input.invalid {
+.form__input.invalid .form__input:invalid {
   color: #E76E74;
   border-style: #E76E74;
 }
