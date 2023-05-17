@@ -124,7 +124,7 @@ a{
                 position: relative;
                 left: 0;
                 bottom: 50%;
-                transform: translateY(25%);
+                transform: translateY(10%);
                 flex-shrink: 0;
             }
         }
@@ -132,6 +132,12 @@ a{
             display: inline-block;
         }
     }
+
+        @media (max-width: 425px) {
+            &+label {
+                align-items: center;
+            }
+        }
 }
 
 .icon{
@@ -185,6 +191,12 @@ a{
     }
 }
 
+.stars-bg{
+    background: url(../images/pono-lopez.png) no-repeat;
+    background-size: cover;
+}
+
 @import 'layout/mainpage/parts/promo';
 @import 'layout/mainpage/parts/textblock';
 @import 'layout/mainpage/parts/why';
+@import 'layout/mainpage/parts/learning';

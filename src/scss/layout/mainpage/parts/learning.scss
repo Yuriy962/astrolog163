@@ -1,0 +1,38 @@
+.learning{
+    &__item{
+        padding: 1.5rem 0 3.5rem;
+        border-top: 2px solid rgba(255,255,255,0.3);
+    }
+    &__name{
+        text-transform: none;
+    }
+    &__time{
+        font-size: 1.5rem;
+        color: #86949E;
+    }
+    &__info{
+        padding-right: 6rem;
+        line-height: 140%;
+    }
+    &__price{
+        font-size: 2rem;
+    }
+    .link-text{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px){
+    .learning{
+        &__info{
+            padding-right: 0;
+        }
+    }
+}
+@media (max-width: 575px){
+    .learning{
+        &__item{
+            padding: 0.5rem 1rem 1.5rem;
+        }
+    }
+}
