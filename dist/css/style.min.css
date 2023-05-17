@@ -634,6 +634,129 @@ a:hover {
   }
 }
 
+.why {
+  background: url(../images/pono-lopez.png) no-repeat;
+  background-size: cover;
+}
+.why__content {
+  padding: 100px 0;
+  position: relative;
+}
+.why__content::before, .why__content::after {
+  content: "";
+  position: absolute;
+}
+.why__content::before {
+  position: absolute;
+  content: url(../images/why/star.svg);
+  left: -4.5%;
+  top: 19%;
+  z-index: 0;
+}
+.why__content::after {
+  z-index: -1;
+  max-width: 45%;
+  width: 75vw;
+  top: 0%;
+  left: -8%;
+  bottom: 0;
+  height: 77vh;
+  max-height: 95%;
+  background: url(../images/why/circle.svg) no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+}
+
+.starlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.starlist__item {
+  position: relative;
+  flex: 0 0 45%;
+  line-height: 130%;
+  margin-bottom: 3rem;
+}
+.starlist__item::before {
+  content: url("../images/why/small-star.svg");
+  position: absolute;
+  top: 0;
+  left: -2rem;
+}
+
+@media (max-width: 1550px) {
+  .why__content:before {
+    left: -1.5vw;
+  }
+  .why__content:after {
+    left: -6vw;
+    width: 45vw;
+    height: 70vh;
+  }
+}
+@media (max-width: 1400px) {
+  .why__content:before {
+    left: -2vw;
+  }
+  .why__content::after {
+    left: -3vw;
+  }
+}
+@media (max-width: 1200px) {
+  .why__content:before {
+    left: -3vw;
+  }
+}
+@media (max-width: 992px) {
+  .why__content::before {
+    left: 8%;
+    top: 14%;
+  }
+  .why__content::after {
+    max-width: 100%;
+    width: 100vw;
+    left: -8vw;
+    height: 80vh;
+    right: 0;
+    top: 2%;
+    bottom: 0;
+  }
+  .starlist {
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .why__content::before {
+    top: 11%;
+  }
+  .starlist {
+    padding: 0 25px;
+    flex-direction: column;
+  }
+  .starlist__item {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .starlist {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .why__content::before {
+    display: none;
+  }
+  .why__content::after {
+    top: -2%;
+  }
+}
+@media (max-width: 430px) {
+  .why__content::after {
+    top: -10%;
+  }
+}
 .photoblock__img {
   width: 100%;
   min-height: 213px;
