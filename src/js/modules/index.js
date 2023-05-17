@@ -146,7 +146,9 @@ hamburger.addEventListener("click", () => {
 
 if (window.matchMedia("(max-width: 1200px)")){
   mobileMenuItems.forEach(item => {
-    mobileMenu.classList.remove(".header__menu--active");
+    item.addEventListener("click", () => {
+      mobileMenu.classList.remove("header__menu--active");
+    });
   });
 }
 
