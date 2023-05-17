@@ -19,12 +19,68 @@
     }
 }
 
+.reviews{
+    &-arrow {
+        width: 3vw;
+        &-next{
+            cursor: pointer;
+            top: -70px;
+            right: 0;
+        }
+
+        &-prev {
+            cursor: pointer;
+            top: -78px;
+            left: auto;
+            right: 50px;
+            transform: rotate(180deg);
+        }
+    }
+    &[aria-disabled="true"] {
+        stroke: #86949E;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 1200px){
+    .reviews {
+        &-arrow {
+            &-prev {
+                top: -77px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .reviews {
+        &-arrow {
+            &-prev {
+                top: -80px;
+                right: 50px;
+            }
+            &-next{
+                right: 0;
+                top: -73px;
+            }
+        }
+    }
+}
+
 @media (max-width: 575px){
     .slider{
         &-arrow{
             right: 0;
             &-prev{
                 left: 0;
+            }
+        }
+    }
+    .reviews {
+        &-arrow {
+            &-prev {
+                right: 50px;
+            }
+            &-next{
             }
         }
     }

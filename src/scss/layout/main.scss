@@ -196,8 +196,19 @@ a{
     background-size: cover;
 }
 
+.clouds-bg {
+    background: url(../images/clouds.png) no-repeat;
+    background-size: cover;
+}
+
+.gray-text{
+    color: #86949E;
+}
+
 @import 'layout/mainpage/parts/promo';
 @import 'layout/mainpage/parts/textblock';
 @import 'layout/mainpage/parts/why';
 @import 'layout/mainpage/parts/learning';
 @import 'layout/mainpage/parts/photos';
+@import 'layout/mainpage/parts/team';
+@import 'layout/mainpage/parts/reviews';

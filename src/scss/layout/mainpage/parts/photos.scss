@@ -1,14 +1,34 @@
 .photos{
     &__item{
         padding: 15px;
+        display: block;
         cursor: pointer;
         &:hover{
             .photos__album{
                 transform: scale(1.1);
             }
+            .photos__window{
+                opacity: 1;
+            }
         }
     }
+    &__window{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity .3s;
+    }
     &__header{
+        position: relative;
         overflow: hidden;
     }
     &__album{

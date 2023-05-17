@@ -5,7 +5,7 @@
   z-index: 10;
   background-color: $firstAccentColor;
   &.sticky {
-    // ..стили для липкого хедера
+    box-shadow: 3px -1px 20px 0px rgba(0, 0, 0, 0.5);
   }
 
   // .header__container

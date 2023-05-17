@@ -269,6 +269,9 @@ body.lock {
   z-index: 10;
   background-color: #051B34;
 }
+.header.sticky {
+  box-shadow: 3px -1px 20px 0px rgba(0, 0, 0, 0.5);
+}
 .header__container {
   height: 6.25rem;
   display: flex;
@@ -586,6 +589,15 @@ a:hover {
   background-size: cover;
 }
 
+.clouds-bg {
+  background: url(../images/clouds.png) no-repeat;
+  background-size: cover;
+}
+
+.gray-text {
+  color: #86949E;
+}
+
 .promo-video {
   max-width: 621px;
   width: 100%;
@@ -799,12 +811,32 @@ a:hover {
 }
 .photos__item {
   padding: 15px;
+  display: block;
   cursor: pointer;
 }
 .photos__item:hover .photos__album {
   transform: scale(1.1);
 }
+.photos__item:hover .photos__window {
+  opacity: 1;
+}
+.photos__window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
 .photos__header {
+  position: relative;
   overflow: hidden;
 }
 .photos__album {
@@ -823,6 +855,56 @@ a:hover {
     text-align: center;
   }
 }
+.team__item {
+  margin: 15px 0;
+  display: flex;
+  border-radius: 20px;
+  background-color: #2C4B6D;
+}
+.team__text {
+  max-width: 334px;
+}
+
+@media (max-width: 1200px) {
+  .team__text {
+    margin: 15px 0;
+    max-width: 100%;
+  }
+}
+.reviews__item {
+  margin: 0 15px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #2C4B6D;
+}
+.reviews__item-header {
+  display: flex;
+  align-items: center;
+}
+.reviews__round {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: #DAE7F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.reviews__title {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.reviews__content {
+  padding-top: 20px;
+  line-height: 140.62%;
+}
+.reviews__name {
+  font-size: 24px;
+}
+.reviews__city {
+  font-size: 18px;
+}
+
 .photoblock__img {
   width: 100%;
   min-height: 213px;
@@ -926,11 +1008,49 @@ a:hover {
   opacity: 0.5;
 }
 
+.reviews-arrow {
+  width: 3vw;
+}
+.reviews-arrow-next {
+  cursor: pointer;
+  top: -70px;
+  right: 0;
+}
+.reviews-arrow-prev {
+  cursor: pointer;
+  top: -78px;
+  left: auto;
+  right: 50px;
+  transform: rotate(180deg);
+}
+.reviews[aria-disabled=true] {
+  stroke: #86949E;
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .reviews-arrow-prev {
+    top: -77px;
+  }
+}
+@media (max-width: 992px) {
+  .reviews-arrow-prev {
+    top: -80px;
+    right: 50px;
+  }
+  .reviews-arrow-next {
+    right: 0;
+    top: -73px;
+  }
+}
 @media (max-width: 575px) {
   .slider-arrow {
     right: 0;
   }
   .slider-arrow-prev {
     left: 0;
+  }
+  .reviews-arrow-prev {
+    right: 50px;
   }
 }

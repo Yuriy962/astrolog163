@@ -208,6 +208,37 @@ if (window.matchMedia("(max-width: 1200px)")){
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          arrows: true,
+        }
+      },
+      ,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: true
+        }
+      }
+    ]
+  });
+
+  $('.reviews__slider').slick({
+    infinite: false,
+    arrows:  true,
+    adaptiveHeight: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: '<svg class="slick-next slider-arrow reviews-arrow-next">' +
+                  '<use xlink:href="#arrow-left"></use>' +
+               '</svg>',
+    prevArrow: '<svg class="slick-prev slider-arrow reviews-arrow-prev">' +
+                  '<use xlink:href="#arrow-left"></use>' +
+               '</svg>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
         }
       },
       ,

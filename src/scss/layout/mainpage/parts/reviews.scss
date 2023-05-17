@@ -1,0 +1,35 @@
+.reviews{
+    &__item{
+        margin: 0 15px;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: $secondAccentColor;
+        &-header{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__round{
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        background-color: #DAE7F4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    &__title{
+        border-bottom: 2px solid rgba(255,255,255,0.3);
+    }
+    &__content{
+        padding-top: 20px;
+        line-height: 140.62%;
+    }
+    &__name{
+        font-size: 24px;
+    }
+    &__city{
+        font-size: 18px;
+    }
+}

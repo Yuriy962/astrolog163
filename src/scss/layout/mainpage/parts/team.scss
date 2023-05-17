@@ -1,0 +1,20 @@
+.team{
+    &__item{
+        margin: 15px 0;
+        display: flex;
+        border-radius: 20px;
+        background-color: $secondAccentColor;
+    }
+    &__text{
+        max-width: 334px;
+    }
+}
+
+@media (max-width: 1200px){
+    .team{
+        &__text{
+            margin: 15px 0;
+            max-width: 100%;
+        }
+    }
+}
