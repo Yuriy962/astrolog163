@@ -1,0 +1,31 @@
+.slider{
+    &-arrow{
+        width: 2rem;
+        height: 1rem;
+        position: absolute;
+        top: 45%;
+        right: -4vw;
+        transform: translateY(-50%);
+        &-prev{
+            top: 44%;
+            left: -4vw;
+            right: auto;
+            transform: rotate(180deg);
+        }
+        &[aria-disabled="true"]{
+            stroke: #86949E;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .slider{
+        &-arrow{
+            right: 0;
+            &-prev{
+                left: 0;
+            }
+        }
+    }
+}

@@ -797,6 +797,32 @@ a:hover {
     padding: 0.5rem 1rem 1.5rem;
   }
 }
+.photos__item {
+  padding: 15px;
+  cursor: pointer;
+}
+.photos__item:hover .photos__album {
+  transform: scale(1.1);
+}
+.photos__header {
+  overflow: hidden;
+}
+.photos__album {
+  width: 100%;
+  transition: all 0.3s;
+}
+.photos .link-text {
+  font-size: 1em;
+}
+
+@media (max-width: 575px) {
+  .photos__header {
+    padding: 15px 20px;
+  }
+  .photos__text {
+    text-align: center;
+  }
+}
 .photoblock__img {
   width: 100%;
   min-height: 213px;
@@ -879,4 +905,32 @@ a:hover {
 
 .f-button {
   background: transparent;
+}
+
+.slider-arrow {
+  width: 2rem;
+  height: 1rem;
+  position: absolute;
+  top: 45%;
+  right: -4vw;
+  transform: translateY(-50%);
+}
+.slider-arrow-prev {
+  top: 44%;
+  left: -4vw;
+  right: auto;
+  transform: rotate(180deg);
+}
+.slider-arrow[aria-disabled=true] {
+  stroke: #86949E;
+  opacity: 0.5;
+}
+
+@media (max-width: 575px) {
+  .slider-arrow {
+    right: 0;
+  }
+  .slider-arrow-prev {
+    left: 0;
+  }
 }

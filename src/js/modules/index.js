@@ -150,7 +150,7 @@ if (window.matchMedia("(max-width: 1200px)")){
   });
 }
 
-const EMAIL_REGEXP = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+  const EMAIL_REGEXP = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
     ///^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
   const PHONE_REGEXP = /\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}/;
 
@@ -189,6 +189,36 @@ const EMAIL_REGEXP = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
   //   validateInput("comment", "comment");
   //   // $("form").trigger("reset");
   // });
+
+  let sliderItems = document.querySelectorAll(".photos__item");
+
+  $('.slider').slick({
+    infinite: false,
+    arrows:  sliderItems.length > 3,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '<svg class="slick-next slider-arrow slider-arrow-next">' +
+                  '<use xlink:href="#arrow-left"></use>' +
+               '</svg>',
+    prevArrow: '<svg class="slick-prev slider-arrow slider-arrow-prev">' +
+                  '<use xlink:href="#arrow-left"></use>' +
+               '</svg>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      ,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 
   export {
     FLS,

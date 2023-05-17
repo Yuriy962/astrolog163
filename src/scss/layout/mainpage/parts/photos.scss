@@ -1,0 +1,32 @@
+.photos{
+    &__item{
+        padding: 15px;
+        cursor: pointer;
+        &:hover{
+            .photos__album{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__header{
+        overflow: hidden;
+    }
+    &__album{
+        width: 100%;
+        transition: all .3s;
+    }
+    .link-text{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 575px){
+    .photos{
+        &__header{
+            padding: 15px 20px;
+        }
+        &__text{
+            text-align: center;
+        }
+    }
+}
