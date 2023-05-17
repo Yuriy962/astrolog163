@@ -193,12 +193,18 @@ a{
 
 .stars-bg{
     background: url(../images/pono-lopez.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 90%;
 }
 
 .clouds-bg {
     background: url(../images/clouds.png) no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 992px){
+    .stars-bg {
+        background-size: cover;
+    }
 }
 
 .gray-text{
