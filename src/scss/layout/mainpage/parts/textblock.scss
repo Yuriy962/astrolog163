@@ -5,6 +5,11 @@
         background-color: $lightBlue;
         border-radius: 20px;
         line-height: 140%;
+        font-size: 1.4rem;
+    }
+
+    .link-text{
+        font-size: 1em;
     }
 
     @media (max-width: 1400px){

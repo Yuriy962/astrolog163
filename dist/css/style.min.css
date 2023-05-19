@@ -641,6 +641,10 @@ a:hover {
   background-color: #2C4B6D;
   border-radius: 20px;
   line-height: 140%;
+  font-size: 1.4rem;
+}
+.textblock .link-text {
+  font-size: 1em;
 }
 @media (max-width: 1400px) {
   .textblock__content {
