@@ -213,6 +213,86 @@ a{
     color: #86949E;
 }
 
+.page{
+    &-title{
+        font-size: 2rem;
+    }
+}
+
+.document {
+    &-title{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-transform: none;
+        padding-left: 2rem;
+    }
+    .document-li{
+        &::before{
+            position: absolute;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+    .link-text{
+        font-size: 1rem;
+    }
+    ul > li{
+        list-style: inside;
+    } 
+}
+
+
+/* Многоуровневый список */
+/* 1-й уровень */
+ol {
+    counter-reset: num;
+    li {
+        font-size: 1rem;
+        line-height: 140.62%;
+        margin-bottom: 1.25rem;
+        &::before{
+            margin-right: 5px;
+        }
+    }
+    span{
+        margin-bottom: 1.25rem;
+    }
+    & > li {
+        counter-increment: num;
+        &::before{
+            content: counter(num) '.';
+        }
+    }
+    /* 2-й уровень */
+    ol {
+        counter-reset: num2;
+        & > li {
+            counter-increment: num2;
+    
+            &::before {
+                content: counter(num) '.' counter(num2) '.';
+            }
+        }
+        /* 3-й уровень */
+        ol {
+            counter-reset: num3;
+
+            & > li {
+                counter-increment: num3;
+
+                &::before {
+                    content: counter(num) '.' counter(num2) '.' counter(num3) '.';
+                }
+            }
+        }
+    }
+}
+
+.list-style-none{
+    list-style: none !important;
+}
+
 @import 'layout/mainpage/parts/promo';
 @import 'layout/mainpage/parts/textblock';
 @import 'layout/mainpage/parts/why';

@@ -136,7 +136,6 @@ const menuClose = () => {
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector(".header__menu");
 const mobileMenuItems = document.querySelectorAll(".menu__item");
-let headerSmrSCHOOL = document.querySelector("header");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('hamburger--active');
@@ -156,42 +155,24 @@ if (window.matchMedia("(max-width: 1200px)")){
     ///^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
   const PHONE_REGEXP = /\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}/;
 
-  // Валидация формы
-  // let validateInput = (id, inputName, regexp) => {
-  //   let input = document.forms[id][inputName];
-  //   if(input){
-  //     if (input.value === "" || !validateValue(input.type, input.value, regexp)) {
-  //       $(`#${id} .${inputName}`).addClass("valid");
-  //       $(`#${id} .${inputName}`).removeClass("invalid");
-  //     } else {
-  //       $(`#${id} .${inputName}`).addClass("invalid");
-  //       $(`#${id} .${inputName}`).removeClass("valid");
-  //     }
-  //   } else {
-  //     console.log(`Поля '${inputName}' нет в этой форме!`);
-  //     return false;
-  //   }
-  // }
 
-  
-  // сравнение введенного значения в инпуте с регулярным выражением
-  // let validateValue = (inputType, value, regexp = "") => {
-  //   if (inputType === "text") {
-  //     return true;
-  //   }
-  //   return regexp.test(value);
-  // }
+  $(document).on('load', function () {
+    let headerSmrSCHOOL = document.querySelector('.header');
+    $(document).scroll(function () {
+        if(window.pageYOffset > headerSmrSCHOOL.offsetTop){
+            headerSmrSCHOOL.style.boxShadow = '0 0 30px 1px rgba(0, 0, 0, 0.3)';
+        }else{
+            headerSmrSCHOOL.style.boxShadow = 'none';
+        }
+    });
+  });
 
-  // симуляция отправки формы
-  // $("form").on("submit", function (e) {
-  //   e.preventDefault();
-  //   validateInput("name", "name");
-  //   validateInput("email", "email", EMAIL_REGEXP);
-  //   validateInput("tel", "tel", PHONE_REGEXP);
-  //   validateInput("comment", "comment");
-  //   // $("form").trigger("reset");
-  // });
-
+  $(document).on("load", function () {
+    $("#form").on("submit", function (e) {
+       e.preventDefault();
+       let form = $(this);
+    });
+  });
   let sliderItems = document.querySelectorAll(".photos__item");
 
   $('.slider').slick({

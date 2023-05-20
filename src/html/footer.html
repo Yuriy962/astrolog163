@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="footer__item col-lg-4 col-6 mx-auto mx-sm-0 mb-4 mb-lg-5 order-0">
-        <a href="#" class="footer__logo logo align-self-end">
+        <a href="/" class="footer__logo logo align-self-end">
           <img src="./images/logo-with-words.svg" alt="Самарская школа астрологии">
         </a>
       </div>
@@ -33,13 +33,13 @@
         <span class="caption">©2020-2023  Самарская Школа Астрологии</span>
       </div>
       <div class="footer__item col-lg-4 col-sm-6 col-12 order-4 mb-4 mb-sm-0">
-        <a class="caption policy" href="#policy">
+        <a class="caption policy" target="_blank" href="./policy.html">
           Политика конфиденциальности
         </a>
       </div>
       <div class="footer__item col-lg-4 col-sm-6 col-12 order-3 order-lg-5 mb-4 mb-sm-0">
         <div class="footer__socials align-items-center">
-          <a href="tel:+79608080049" target="_blank" class="icon ms-0">
+          <a href="tel:+79608080049" class="icon ms-0">
             <svg class="icon">
               <use xlink:href="#phone"></use>
             </svg>
@@ -60,7 +60,7 @@
   </div>
 </footer>
 
-<form id="form" class="form mt-3" style="display: none;">
+<form class="form mt-3" style="display: none;" method="post" id="form" onsubmit="send(event)" action="static/send.php">
   <h3 class="form__title text-center pb-4">
     Записаться на обучение
   </h3>
@@ -79,7 +79,7 @@
     <div class="form__checkbox mt-4 mb-5 my-xl-5">
       <input type="checkbox" class="checkbox" id="agreement">
       <label for="agreement">
-        <span>Согласен с <a href="#policy" class="policy">политикой конфиденциальности</a></span>
+        <span>Согласен с <a href="./policy.html" target="_blank" class="policy">политикой конфиденциальности</a></span>
       </label>
     </div>
     <input class="btn" type="submit" value="Отправить заявку">

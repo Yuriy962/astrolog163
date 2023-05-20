@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
 </head>
   <body>
     <div class="position-relative wrapper">
       <header class="header position-fixed">
   <div class="container align-items-center d-flex">
-    <a href="#" class="align-self-end logo header__logo">
+    <a href="/" class="align-self-end logo header__logo">
       <picture>
         <source media="(min-width:1100px)" srcset="./images/logo-with-words.svg">
         <source media="(max-width:767px)" srcset="./images/logo.svg">
@@ -66,7 +67,7 @@
       </span>
     </div>
     <div class="me-3 align-items-center header__socials me-auto me-xl-0 ms-3">
-      <a href="tel:+79608080049" target="_blank" class="icon">
+      <a href="tel:+79608080049" class="icon">
         <svg class="icon">
           <use xlink:href="#phone"></use>
         </svg>
@@ -182,7 +183,7 @@
                     <div class="col-12 col-md-4">
                         <h3 class="mb-3 learning__name">Очное обучение</h3>
                         <span class="d-block mb-3 learning__time">
-                            старт 14 сентября
+                            старт 3 сентября
                         </span>
                     </div>
                     <div class="col-12 col-md-4 text-small">
@@ -438,7 +439,7 @@
   <div class="container">
     <div class="row">
       <div class="mb-4 col-lg-4 footer__item mb-lg-5 col-6 mx-auto mx-sm-0 order-0">
-        <a href="#" class="align-self-end logo footer__logo">
+        <a href="/" class="align-self-end logo footer__logo">
           <img src="./images/logo-with-words.svg" alt="Самарская школа астрологии">
         </a>
       </div>
@@ -465,13 +466,13 @@
         <span class="caption">©2020-2023  Самарская Школа Астрологии</span>
       </div>
       <div class="col-12 col-lg-4 col-sm-6 footer__item mb-sm-0 mb-4 order-4">
-        <a class="caption policy" href="#policy">
+        <a class="caption policy" target="_blank" href="./policy.html">
           Политика конфиденциальности
         </a>
       </div>
       <div class="col-12 col-lg-4 col-sm-6 footer__item mb-sm-0 mb-4 order-3 order-lg-5">
         <div class="footer__socials align-items-center">
-          <a href="tel:+79608080049" target="_blank" class="icon ms-0">
+          <a href="tel:+79608080049" class="icon ms-0">
             <svg class="icon">
               <use xlink:href="#phone"></use>
             </svg>
@@ -492,7 +493,7 @@
   </div>
 </footer>
 
-<form id="form" class="mt-3 form" style="display: none;">
+<form class="mt-3 form" style="display: none;" method="post" id="form" onsubmit="send(event)" action="static/send.php">
   <h3 class="pb-4 text-center form__title">
     Записаться на обучение
   </h3>
@@ -511,7 +512,7 @@
     <div class="mb-5 form__checkbox mt-4 my-xl-5">
       <input type="checkbox" class="checkbox" id="agreement">
       <label for="agreement">
-        <span>Согласен с <a href="#policy" class="policy">политикой конфиденциальности</a></span>
+        <span>Согласен с <a href="./policy.html" target="_blank" class="policy">политикой конфиденциальности</a></span>
       </label>
     </div>
     <input class="btn" type="submit" value="Отправить заявку">

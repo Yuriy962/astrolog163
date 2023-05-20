@@ -605,6 +605,76 @@ a:hover {
   color: #86949E;
 }
 
+.page-title {
+  font-size: 2rem;
+}
+
+.document-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: none;
+  padding-left: 2rem;
+}
+.document .document-li::before {
+  position: absolute;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.document .link-text {
+  font-size: 1rem;
+}
+.document ul > li {
+  list-style: inside;
+}
+
+/* Многоуровневый список */
+/* 1-й уровень */
+ol {
+  counter-reset: num;
+  /* 2-й уровень */
+}
+ol li {
+  font-size: 1rem;
+  line-height: 140.62%;
+  margin-bottom: 1.25rem;
+}
+ol li::before {
+  margin-right: 5px;
+}
+ol span {
+  margin-bottom: 1.25rem;
+}
+ol > li {
+  counter-increment: num;
+}
+ol > li::before {
+  content: counter(num) ".";
+}
+ol ol {
+  counter-reset: num2;
+  /* 3-й уровень */
+}
+ol ol > li {
+  counter-increment: num2;
+}
+ol ol > li::before {
+  content: counter(num) "." counter(num2) ".";
+}
+ol ol ol {
+  counter-reset: num3;
+}
+ol ol ol > li {
+  counter-increment: num3;
+}
+ol ol ol > li::before {
+  content: counter(num) "." counter(num2) "." counter(num3) ".";
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
 .promo-video {
   max-width: 621px;
   width: 100%;
