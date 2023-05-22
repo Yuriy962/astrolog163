@@ -65,13 +65,13 @@
   &--active{
     span{
       &:nth-child(1){
-        transform: rotate(45deg) translate(9px, 9px);
+        transform: rotate(45deg) translate(7px, -1px);
       }
       &:nth-child(2){
         display: none;
       }
       &:nth-child(3) {
-        transform: rotate(-45deg) translateY(3px);
+        transform: rotate(-45deg) translate(9px, 0px);
       }
     }
   }

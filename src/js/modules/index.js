@@ -147,6 +147,7 @@ if (window.matchMedia("(max-width: 1200px)")){
   mobileMenuItems.forEach(item => {
     item.addEventListener("click", () => {
       mobileMenu.classList.remove("header__menu--active");
+      hamburger.classList.remove('hamburger--active');
     });
   });
 }

@@ -70,6 +70,11 @@
         &__window{
             display: none;
         }
+        &:hover {
+            .photos__album {
+                transform: scale(1);
+            }
+        }
     }
 }
 
@@ -85,6 +90,15 @@
         &__album{
             max-height: 327px;
             height: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .photos {
+        &__header,
+        &__album {
+            height: 60vw;
         }
     }
 }
