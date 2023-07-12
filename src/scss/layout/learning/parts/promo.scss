@@ -5,8 +5,19 @@
             border-radius: 30%;
         }
     }
+    &-info{
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    &-title{
+        text-transform: capitalize;
+    }
 }
 
-.date-start{
+.date-start,
+.gray-text{
     @extend .learning__time;
+    line-height: 140%;
+    &-small{
+        font-size: 18px;
+    }
 }

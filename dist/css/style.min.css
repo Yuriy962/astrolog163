@@ -869,7 +869,8 @@ ol ol ol > li::before {
 .learning__name {
   text-transform: none;
 }
-.learning__time, .date-start {
+.learning__time, .date-start,
+.gray-text {
   font-size: 1.5rem;
   color: #86949E;
 }
@@ -1027,6 +1028,21 @@ ol ol ol > li::before {
 .learning .promo__img {
   max-height: 403px;
   border-radius: 30%;
+}
+.learning-info {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+.learning-title {
+  text-transform: capitalize;
+}
+
+.date-start,
+.gray-text {
+  line-height: 140%;
+}
+.date-start-small,
+.gray-text-small {
+  font-size: 18px;
 }
 
 .photoblock__img {
