@@ -1,0 +1,12 @@
+.learning{
+    .promo{
+        &__img{
+            max-height: 403px;
+            border-radius: 30%;
+        }
+    }
+}
+
+.date-start{
+    @extend .learning__time;
+}

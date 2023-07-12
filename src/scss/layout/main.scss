@@ -293,6 +293,10 @@ ol {
     list-style: none !important;
 }
 
+.price{
+    font-size: 2rem;
+}
+
 @import 'layout/mainpage/parts/promo';
 @import 'layout/mainpage/parts/textblock';
 @import 'layout/mainpage/parts/why';
@@ -300,3 +304,7 @@ ol {
 @import 'layout/mainpage/parts/photos';
 @import 'layout/mainpage/parts/team';
 @import 'layout/mainpage/parts/reviews';
+
+@import 'layout/learning/learning';
+
+@import 'layout/teachers/teachers';

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/head.html', {
+    'title': 'Очное обучение'
+  })
+  <body>
+    <div class="wrapper position-relative">
+      @@include('./html/header.html', {})
+      <main class="page">
+        <div data-observ></div>
+        <section class="section section--first promo">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-xl-7 promo__content d-flex d-xl-block flex-column flex-xl-row align-items-center py-5">
+                  <h1 class="mb-3 mb-sm-4 promo__title text-sm-nowrap">
+                      Очное обучение
+                  </h1>
+                  <p class="text mb-4 mb-lg-5 mt-2">
+                      3-х летний курс обучения в специально оборудованных аудиториях в центре Самары
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row align-items-center mb-4">
+                    <span class="d-block mb-3 me-sm-4 price">
+                      6000₽ / семестр
+                    </span>
+                    <span class="d-block mb-3 date-start"> старт 14 сентября</span>
+                  </div>
+
+                    <button class="btn" data-fancybox data-src="#form">
+                        Записаться на обучение
+                    </button>
+              </div>
+              <div class="col-12 col-xl-5 d-flex justify-content-center align-items-center">
+                  <img src="./images/learning/promo.png" alt="" class="promo__img mw-100">
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </main>
+      @@include('./html/footer.html', {})
+    </div>
+    @@include('./html/script.html', {})
+  </body>
+</html> 

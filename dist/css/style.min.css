@@ -675,6 +675,10 @@ ol ol ol > li::before {
   list-style: none !important;
 }
 
+.price {
+  font-size: 2rem;
+}
+
 .promo-video {
   max-width: 621px;
   width: 100%;
@@ -865,7 +869,7 @@ ol ol ol > li::before {
 .learning__name {
   text-transform: none;
 }
-.learning__time {
+.learning__time, .date-start {
   font-size: 1.5rem;
   color: #86949E;
 }
@@ -1018,6 +1022,11 @@ ol ol ol > li::before {
 }
 .reviews__city {
   font-size: 18px;
+}
+
+.learning .promo__img {
+  max-height: 403px;
+  border-radius: 30%;
 }
 
 .photoblock__img {

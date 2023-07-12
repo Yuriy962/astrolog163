@@ -4,9 +4,9 @@
     'title': 'Политика конфиденциальности'
   })
   <body>
-    <div class="wrapper position-relative">
+    <main class="page">
+      <div class="wrapper position-relative">
       @@include('./html/header.html', {})
-      <main class="page">
         <div data-observ></div>
         <section class="section--first policy-page document">
           <div class="container">
@@ -209,9 +209,9 @@
             </ol>
           </div>
         </section>
-      </main>
-      @@include('./html/footer.html', {})
-    </div>
+        @@include('./html/footer.html', {})
+      </div>
+    </main>
     @@include('./html/script.html', {})
   </body>
 </html> 
