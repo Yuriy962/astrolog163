@@ -679,6 +679,12 @@ ol ol ol > li::before {
   font-size: 2rem;
 }
 
+.list-style-dash li:before {
+  content: "-";
+  margin-right: 10px;
+  line-height: 140%;
+}
+
 .promo-video {
   max-width: 621px;
   width: 100%;

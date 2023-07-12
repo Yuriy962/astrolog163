@@ -297,6 +297,14 @@ ol {
     font-size: 2rem;
 }
 
+.list-style-dash{
+    li:before{
+        content: "-";
+        margin-right: 10px;
+        line-height: 140%;
+    }
+}
+
 @import 'layout/mainpage/parts/promo';
 @import 'layout/mainpage/parts/textblock';
 @import 'layout/mainpage/parts/why';
