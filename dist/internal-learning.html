@@ -16,7 +16,7 @@
   <body>
     <div class="position-relative wrapper">
       <header class="header position-fixed">
-  <div class="d-flex align-items-center container">
+  <div class="align-items-center d-flex container">
     <a href="index.html" class="align-self-end logo header__logo">
       <picture>
         <source media="(min-width:1100px)" srcset="./images/logo-with-words.svg">
@@ -26,12 +26,12 @@
       </picture>
     </a>
     <nav class="align-self-end header__menu justify-content-center justify-content-xl-between menu ms-auto">
-      <ul class="d-flex flex-column menu__list flex-xl-row pe-3">
+      <ul class="flex-xl-row d-flex flex-column menu__list pe-3">
         <li class="menu__item">
           <a href="#about" class="menu__link">О нас</a>
         </li>
         <li class="menu__item">
-          <a href="./internal-learning.html" class="menu__link">Обучение</a>
+          <a href="#learning" class="menu__link">Обучение</a>
         </li>
         <li class="menu__item">
           <a href="#teachers" class="menu__link">Преподаватели</a>
@@ -59,7 +59,7 @@
       </ul>
     </nav>
     <div class="mx-auto header__contacts ms-xl-auto">
-      <a href="tel:+79608080049" class="d-block mb-2 phone">
+      <a href="tel:+79608080049" class="mb-2 d-block phone">
         +7 960 808 00 49
       </a>
       <span class="address">
@@ -96,25 +96,25 @@
         <section class="section promo section--first">
           <div class="container">
             <div class="row">
-              <div class="d-flex flex-column align-items-center col-12 col-xl-7 d-xl-block flex-xl-row promo__content py-5">
+              <div class="align-items-center d-flex col-12 col-xl-7 d-xl-block flex-column flex-xl-row promo__content py-5">
                   <h1 class="mb-3 mb-sm-4 promo__title text-sm-nowrap">
                       Очное обучение
                   </h1>
-                  <p class="mb-4 mb-lg-5 mt-2 text">
+                  <p class="mb-4 text mb-lg-5 mt-2">
                       3-х летний курс обучения в специально оборудованных аудиториях в центре Самары
                   </p>
                   <div class="mb-4 align-items-center d-flex flex-column flex-sm-row">
                     <span class="d-block mb-3 me-sm-4 price">
                       6000₽ / семестр
                     </span>
-                    <span class="d-block mb-3 date-start"> старт 14 сентября</span>
+                    <span class="d-block mb-3 date-start"> старт 2 сентября</span>
                   </div>
 
                     <button class="btn" data-fancybox data-src="#form">
                         Записаться на обучение
                     </button>
               </div>
-              <div class="d-flex align-items-center col-12 col-xl-5 justify-content-center">
+              <div class="align-items-center d-flex col-12 col-xl-5 justify-content-center">
                   <img src="./images/learning/promo.png" alt="" class="mw-100 promo__img">
               </div>
             </div>
@@ -127,19 +127,19 @@
               <div class="col-sm-6 col-md-4">
                 <div class="text-center learning-info pe-0 py-4 text-md-start">
                   <h2 class="learning-title">3</h2>
-                  <span class="d-block gray-text gray-text-small">года обучения</span>
+                  <span class="gray-text gray-text-small d-block">года обучения</span>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4">
                 <div class="text-center learning-info pe-0 py-4 text-md-start">
                   <h2 class="learning-title">947</h2>
-                  <span class="d-block gray-text gray-text-small">академических часов</span>
+                  <span class="gray-text gray-text-small d-block">академических часов</span>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4">
                 <div class="text-center learning-info pe-0 py-4 text-md-start">
                   <h2 class="learning-title">Диплом</h2>
-                  <span class="d-block gray-text gray-text-small">по специальности «Астролог»</span>
+                  <span class="gray-text gray-text-small d-block">по специальности «Астролог»</span>
                 </div>
               </div>
             </div>
@@ -153,10 +153,10 @@
                 <h2 class="mb-4 text-center text-lg-start">Учебный процесс</h2>
               </div>
               <div class="col-lg-8">
-                <p class="mb-4 text text-center text-lg-start">Длительность обучения составляет 3 учебных года. Учебный год состоит из 4 семестров по 2 месяца.</p>
+                <p class="mb-4 text-center text-lg-start text">Длительность обучения составляет 3 учебных года. Учебный год состоит из 4 семестров по 2 месяца.</p>
                 <div class="row">
-                  <div class="col-sm-6 mb-4">
-                    <span class="d-block gray-text gray-text-small mb-1">За один семестр:</span>
+                  <div class="mb-4 col-sm-6">
+                    <span class="gray-text gray-text-small d-block mb-1">За один семестр:</span>
                     <ul class="list-style-dash ps-0">
                       <li>8 аудиторных занятий </li>
                       <li>6 самостоятельных домашних заданий</li>
@@ -164,25 +164,171 @@
                       <li>выполнение итоговой курсовой работы</li>
                     </ul>
                   </div>
-                  <div class="col-sm-6 mb-4">
-                    <span class="d-block gray-text gray-text-small mb-1">Сертификат</span>
-                    <p class="mb-0 text-small">
+                  <div class="mb-4 col-sm-6">
+                    <span class="gray-text gray-text-small d-block mb-1">Сертификат:</span>
+                    <p class="text-small mb-0">
                       Вы получаете сертификат по итогам успешного прохождения тестов, сдачи всех самостоятельных и курсовых работ за учебный год
                     </p>
                   </div>
-                  <div class="col-sm-6 mb-4">
-                    <span class="d-block gray-text gray-text-small mb-1">Местонахождение</span>
-                    <p class="mb-0 text-small">
+                  <div class="mb-4 col-sm-6">
+                    <span class="gray-text gray-text-small d-block mb-1">Местонахождение:</span>
+                    <p class="text-small mb-0">
                       Занятия проходят в учебной аудитории в географическом центре Самары.
                     </p>
                   </div>
-                  <div class="col-sm-6 mb-4">
-                    <span class="d-block gray-text gray-text-small mb-1">Длительность занятий</span>
-                     <p class="mb-0 text-small">
+                  <div class="mb-4 col-sm-6">
+                    <span class="gray-text gray-text-small d-block mb-1">Длительность занятий:</span>
+                     <p class="text-small mb-0">
                       Занимаемся 1 раз в неделю по 4 академических часа с перерывом
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h2 class="mb-4 text-center text-lg-start">Учебный план</h2>
+              </div>
+              <div class="col-lg-8">
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <header class="py-4 dropdown__header pe-5 text-2r">
+                      <div class="row align-items-center">
+                        <div class="col-md-2 col-sm-3 text-nowrap">
+                          <span class="gray-text text-2r">I курс</span>
+                        </div>
+                        <div class="col-md-10 col-sm-9">
+                          «Базовый курс Астрологии»
+                        </div>
+                      </div>
+                    </header>
+                    <div class="pb-4 dropdown__content">
+                      <div class="row">
+                        <div class="col-sm-10 offset-sm-2">
+                          <ul class="list-style-none">
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">1 семестр</span>
+                                Зодиак. Планеты. Космограмма.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">2 семестр</span>
+                                Аспекты
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">3 семестр</span>
+                                Дома
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">4 семестр</span>
+                                Синастрия. Профессии. Астропсихология. 
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <header class="py-4 dropdown__header pe-5 text-2r">
+                      <div class="row align-items-center">
+                        <div class="col-md-2 col-sm-3 text-nowrap">
+                          <span class="gray-text text-2r">II курс </span>
+                        </div>
+                        <div class="col-md-10 col-sm-9">
+                          «Прогнозирование»
+                        </div>
+                      </div>
+                    </header>
+                    <div class="pb-4 dropdown__content">
+                      <div class="row">
+                        <div class="col-sm-10 offset-sm-2">
+                          <ul class="list-style-none">
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">1 семестр</span>
+                                Транзиты.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">2 семестр</span>
+                                Прогрессии.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">3 семестр</span>
+                                Дирекции.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">4 семестр</span>
+                                Возвращения. Прогноз на год. 
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <header class="py-4 dropdown__header pe-5 text-2r">
+                      <div class="row align-items-center">
+                        <div class="col-md-2 col-sm-3 text-nowrap">
+                          <span class="gray-text text-2r">III курс </span>
+                        </div>
+                        <div class="col-md-10 col-sm-9">
+                          «Специальные техники»
+                        </div>
+                      </div>
+                    </header>
+                    <div class="pb-4 dropdown__content">
+                      <div class="row">
+                        <div class="col-sm-10 offset-sm-2">
+                          <ul class="list-style-none">
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">1 семестр</span>
+                                Хорарная астрология.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">2 семестр</span>
+                                Ректификация.
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">3 семестр</span>
+                                Элективная астрология. АКГ..
+                              </span>
+                            </li>
+                            <li class="mb-2">
+                              <span class="text-small">
+                                <span class="gray-text gray-text-small d-inline-block me-2">4 семестр</span>
+                                Апотелесматика.
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -200,7 +346,7 @@
           <img src="./images/logo-with-words.svg" alt="Самарская школа астрологии">
         </a>
       </div>
-      <div class="col-sm-6 mb-4 col-lg-4 footer__item mb-lg-5 order-1">
+      <div class="mb-4 col-sm-6 col-lg-4 footer__item mb-lg-5 order-1">
         <span class="d-inline-block footer__title mb-2">
           Наше местоположение
         </span>
@@ -212,22 +358,22 @@
         <span class="d-inline-block footer__title mb-2">
           Контакты
         </span>
-        <a href="tel:+79608080049" class="mb-1 d-inline-block footer__text">
+        <a href="tel:+79608080049" class="d-inline-block footer__text mb-1">
           +7 960 808 00 49
         </a>
-        <a href="mailto:astrologer@63school.ru" class="mb-1 d-inline-block footer__text">
+        <a href="mailto:astrologer@63school.ru" class="d-inline-block footer__text mb-1">
           astrologer@63school.ru
         </a>
       </div>
       <div class="col-sm-6 col-lg-4 footer__item col-12 mb-sm-0 mb-3 order-5 order-lg-3">
         <span class="caption">©2020-2023  Самарская Школа Астрологии</span>
       </div>
-      <div class="col-sm-6 mb-4 col-lg-4 footer__item col-12 mb-sm-0 order-4">
+      <div class="mb-4 col-sm-6 col-lg-4 footer__item col-12 mb-sm-0 order-4">
         <a class="caption policy" target="_blank" href="./policy.html">
           Политика конфиденциальности
         </a>
       </div>
-      <div class="col-sm-6 mb-4 col-lg-4 footer__item col-12 mb-sm-0 order-3 order-lg-5">
+      <div class="mb-4 col-sm-6 col-lg-4 footer__item col-12 mb-sm-0 order-3 order-lg-5">
         <div class="align-items-center footer__socials">
           <a href="tel:+79608080049" class="icon ms-0">
             <svg class="icon">

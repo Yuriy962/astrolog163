@@ -444,6 +444,10 @@ a:hover {
   line-height: 130%;
 }
 
+.text-2r {
+  font-size: 2rem !important;
+}
+
 .field-text {
   font-size: 1.25rem;
 }
@@ -683,6 +687,38 @@ ol ol ol > li::before {
   content: "-";
   margin-right: 10px;
   line-height: 140%;
+}
+
+.dropdown {
+  padding-left: 0;
+}
+.dropdown__header {
+  position: relative;
+}
+.dropdown__header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 24px;
+  height: 24px;
+  transform: rotate(0deg);
+  background: url("../images/icons/arrow-down.svg");
+  cursor: pointer;
+}
+.dropdown__item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.dropdown__item:first-child {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+.dropdown__item--active .dropdown__header::after {
+  transform: rotate(180deg);
+}
+.dropdown__content {
+  display: none;
 }
 
 .promo-video {

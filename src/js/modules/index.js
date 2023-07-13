@@ -235,6 +235,14 @@ if (window.matchMedia("(max-width: 1200px)")){
     ]
   });
 
+  $(".dropdown__item").on("click", function () {
+    let content = $(this).find(".dropdown__content");
+    if(content.text !== ''){
+      $(this).toggleClass('dropdown__item--active');
+      content.slideToggle();
+    }
+  });
+
   export {
     FLS,
     isWebp,
