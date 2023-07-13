@@ -694,6 +694,7 @@ ol ol ol > li::before {
 }
 .dropdown__header {
   position: relative;
+  cursor: pointer;
 }
 .dropdown__header::after {
   content: "";
@@ -706,7 +707,7 @@ ol ol ol > li::before {
   height: 24px;
   transform: rotate(0deg);
   background: url("../images/icons/arrow-down.svg");
-  cursor: pointer;
+  transition: all 0.3s;
 }
 .dropdown__item {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);

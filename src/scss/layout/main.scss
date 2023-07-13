@@ -312,6 +312,7 @@ ol {
     padding-left: 0;
     &__header{
         position: relative;
+        cursor: pointer;
         &::after{
             content: '';
             position: absolute;
@@ -323,7 +324,7 @@ ol {
             height: 24px;
             transform: rotate(0deg);
             background: url('../images/icons/arrow-down.svg');
-            cursor: pointer;
+            transition: all .3s;
         }
     }
     &__item {
